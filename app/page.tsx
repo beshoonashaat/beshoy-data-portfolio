@@ -203,7 +203,7 @@ export default function Home() {
 
         <div className="projectGrid">
           {projects.map((p) => (
-            <article className={p.featured ? 'project featured' : 'project'} key={p.title}>
+            <article className="project" key={p.title}>
               <div className="projectMeta">
                 <span>{p.n}</span>
                 <span>{p.type}</span>
