@@ -44,3 +44,17 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--acid);outline-offse
   .projectBody{min-height:0}
   .projectBody h3,.projectBody p{min-height:0}
 }
+
+
+/* Services */
+.services{border-top:1px solid var(--line)}
+.servicesGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.serviceCard{background:#fff;padding:28px;min-height:270px;display:flex;flex-direction:column}
+.serviceCard svg{width:21px;height:21px;margin:38px 0 25px;color:#7ba72c}
+.serviceNumber{font:10px 'DM Mono';color:var(--muted);letter-spacing:.08em}
+.serviceCard h3{font-size:22px;letter-spacing:-.04em;margin:0 0 10px}
+.serviceCard p{font-size:13px;line-height:1.7;color:var(--muted);margin:0;max-width:300px}
+@media(max-width:800px){
+  .servicesGrid{grid-template-columns:1fr}
+  .serviceCard{min-height:230px}
+}
