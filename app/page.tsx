@@ -80,7 +80,7 @@ const projects = [
   },
 ];
 
-const skills = [
+const skills: Array<[string, string[]]> = [
   ['Data Engineering', ['SQL', 'Data Cleaning', 'Data Modeling', 'ETL', 'Data Quality', 'Power Query']],
   ['Data Science', ['Python', 'Machine Learning', 'Scikit-learn', 'NumPy', 'NLP', 'PCA', 'Clustering']],
   ['Analytics & BI', ['Power BI', 'DAX', 'Data Visualization', 'Customer Segmentation']],
@@ -301,7 +301,7 @@ export default function Home() {
               </div>
 
               <div className="skillList">
-                {(items as string[]).map((x) => <span key={x}>{x}</span>)}
+                {items.map((x) => <span key={x}>{x}</span>)}
               </div>
             </div>
           ))}
