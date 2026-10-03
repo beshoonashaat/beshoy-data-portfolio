@@ -10,6 +10,8 @@ import {
   BrainCircuit,
   BarChart3,
   Code2,
+  Globe2,
+  Layers3,
   Menu,
   X,
 } from 'lucide-react';
@@ -103,7 +105,7 @@ export default function Home() {
         </button>
 
         <nav className={open ? 'navlinks open' : 'navlinks'} aria-label="Main navigation">
-          {['work', 'about', 'skills', 'contact'].map((x) => (
+          {['work', 'about', 'services', 'skills', 'contact'].map((x) => (
             <button key={x} type="button" onClick={() => nav(x)}>
               {x}
             </button>
@@ -271,6 +273,62 @@ export default function Home() {
               <small>Data Science · 2023—2027 · School of AI &amp; Data Management</small>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="services" className="section services">
+        <div className="sectionHead">
+          <div>
+            <span className="kicker">SERVICES</span>
+            <h2>
+              What I can <em>build.</em>
+            </h2>
+          </div>
+          <p>Practical data and web solutions, from raw data and models to production-ready applications.</p>
+        </div>
+
+        <div className="servicesGrid">
+          <article className="serviceCard">
+            <span className="serviceNumber">01</span>
+            <Database />
+            <h3>Data Engineering</h3>
+            <p>Data pipelines, cleaning, transformation, databases, and reliable data workflows.</p>
+          </article>
+
+          <article className="serviceCard">
+            <span className="serviceNumber">02</span>
+            <BarChart3 />
+            <h3>Data Analysis &amp; BI</h3>
+            <p>Turning data into insights through analysis, dashboards, visualization, and reporting.</p>
+          </article>
+
+          <article className="serviceCard">
+            <span className="serviceNumber">03</span>
+            <BrainCircuit />
+            <h3>Machine Learning</h3>
+            <p>Building and evaluating models for classification, prediction, and pattern discovery.</p>
+          </article>
+
+          <article className="serviceCard">
+            <span className="serviceNumber">04</span>
+            <Layers3 />
+            <h3>Database Solutions</h3>
+            <p>Designing schemas and structured databases that keep application data organized and maintainable.</p>
+          </article>
+
+          <article className="serviceCard">
+            <span className="serviceNumber">05</span>
+            <Globe2 />
+            <h3>Web Development</h3>
+            <p>Modern responsive websites and web applications with React, Next.js, TypeScript, and APIs.</p>
+          </article>
+
+          <article className="serviceCard">
+            <span className="serviceNumber">06</span>
+            <Code2 />
+            <h3>Data-Driven Applications</h3>
+            <p>Connecting data, APIs, and machine learning into practical applications people can use.</p>
+          </article>
         </div>
       </section>
 
